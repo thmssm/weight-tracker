@@ -1420,8 +1420,3 @@
     </script>
 </body>
 </html>
-```eof
-
-### What Changed:
-1. **Resilient Firebase Connection:** `signInAnonymously()` now executes safely inside an isolated `try...catch`. If Anonymous auth is disabled on your Firebase project, the app will no longer crash or fail—it will seamlessly establish a direct real-time connection to your Firestore database.
-2. **Updated `index.html`:** Simply copy and commit this file to your GitHub repository. Once Vercel redeploys (in ~10 seconds), refresh your web app on both PC and mobile. The status indicator should turn green (**`🟢 Cloud Synced`**), enabling instant synchronization!
